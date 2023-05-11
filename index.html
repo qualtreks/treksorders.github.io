@@ -23,8 +23,8 @@
             flex-grow: 2;
         }
         .search-bar input {
-            width: 90%;
-            padding: 15px; /* Increased padding */
+            width: 99%;
+            padding: 10px; /* Increased padding */
             font-size: 18px; /* Increased font size */
             border-radius: 10px;
         }
@@ -71,6 +71,32 @@
             background-color: #4CAF50;
             color: white;
         }
+        .help-section {
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px; /* This rounds the corners of the box */
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .option {
+            text-align: center;
+        }
+
+        .option img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .option p {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -112,5 +138,22 @@
             </div>
         </div>
     </div>
+    <div class="help-section">
+    <h2>Hello, what will you need help with today?</h2>
+    <div class="options">
+        <div class="option">
+            <img src="tracking-icon.png" alt="Tracking Icon">
+            <p>Tracking My Orders</p>
+        </div>
+        <div class="option">
+            <img src="returns-icon.png" alt="Returns Icon">
+            <p>Returns and Exchanges</p>
+        </div>
+        <div class="option">
+            <img src="edit-cancel-icon.png" alt="Edit/Cancel Icon">
+            <p>Edit/Cancel My Order</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
