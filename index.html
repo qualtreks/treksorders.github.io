@@ -12,9 +12,13 @@
             display: flex;
             align-items: center;
         }
-        .logo img, .user-profile img {
-            height: 60px;
-            width: 80px;
+        .user-profile img {
+            height: 40px;
+            width: 40px;
+        }
+         .logo img {
+            height: 70px;
+            width: 90px;
         }
         .logo {
             flex-grow: 1;
@@ -79,7 +83,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-right: 40px;
+            margin-right: 60px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -90,6 +94,12 @@
             background-color: #4d5d53;
             color: white;
         }
+        .selected-row {
+            background-color: #bebebe; /* Light blue background color */
+            color: #004085; /* Dark blue text color */
+            font-weight: bold; /* Bold text */
+        }
+
         .help-section {
             text-align: center;
             padding: 20px;
@@ -196,6 +206,9 @@
                 <tr><td>Contact Us</td></tr>
                 <tr><td>Size Guide</td></tr>
                 <tr><td>Gift Cards</td></tr>
+                <tr class="selected-row">
+                  <td>Shipping Information</td>
+                </tr>
             </table>
         </div>
         <div class="product-alert">
