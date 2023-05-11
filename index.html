@@ -1,267 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My E-commerce Website</title>
-  <style>
-    /* CSS styles for the logo, header, and buttons */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-
-    header {
-      background-color: #0071DC; /* Blue color */
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    header img {
-      height: 60px; /* Increase the logo size */
-      margin-right: 10px;
-    }
-
-    .search-bar {
-      flex-grow: 1; /* Take remaining space */
-      display: flex;
-      align-items: center;
-    }
-
-    .search-bar input[type="text"] {
-      flex-grow: 1; /* Fill remaining space */
-      padding: 5px;
-      border: none;
-      border-radius: 3px;
-    }
-
-    .search-bar button {
-      padding: 5px 10px;
-      background-color: #4CAF50; /* Olive green */
-      border: none;
-      border-radius: 3px;
-      color: #fff;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-
-    nav {
-      flex-grow: 1; /* Take remaining space */
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-end; /* Align links to the right */
-    }
-
-    nav ul li {
-      margin-left: 10px; /* Increase the spacing between links */
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #A6DCF2; /* Light blue color on hover */
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .button-group {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-
-    .button-group button {
-      padding: 10px 20px;
-      background-color: #0071DC; /* Blue color */
-      border: none;
-      border-radius: 3px;
-      color: #fff;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .button-group button:hover {
-      background-color: #A6DCF2; /* Light blue color on hover */
-    }
-
-    footer {
-      background-color: #f2f2f2;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+    <title>QualTreks Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: limegreen; /* This is a green color, replace with the exact color you want */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            flex-grow: 1;
+        }
+        .search-bar {
+            flex-grow: 2;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+        }
+        .user-profile {
+            flex-grow: 1;
+            text-align: right;
+        }
+        .alert {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .products button {
+            padding: 20px;
+            font-size: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="Logo.png" alt="Logo">
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button type="button">Search</button>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" />
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+        </div>
+        <div class="user-profile">
+            <img src="user-icon.png" alt="User Profile" />
+        </div>
+    </header>
+        <div class="content">
+        <div class="help-table">
+            <table>
+                <tr>
+                    <th>Help Topics</th>
+                </tr>
+                <tr><td>Order Tracking</td></tr>
+                <tr><td>Return Policy</td></tr>
+                <tr><td>Shipping Information</td></tr>
+                <tr><td>Manage Account</td></tr>
+                <tr><td>Payment Options</td></tr>
+                <tr><td>Privacy Policy</td></tr>
+                <tr><td>Terms of Service</td></tr>
+                <tr><td>Contact Us</td></tr>
+                <tr><td>Size Guide</td></tr>
+                <tr><td>Gift Cards</td></tr>
+            </table>
+        </div>
+        <div class="alert">Alert! Major Shipping Delays</div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Track my Orders</a></li>
-        <li><a href="#">My Account</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-<head>
-  <title>My E-commerce Website</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    .sidebar {
-      background-color: #f2f2f2;
-      width: 200px;
-    }
-
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-    }
-
-    .row {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-  </style>
-<head>
-  <title>Support Help Topics</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 20px;
-      background-color: #f2f2f2;
-    }
-
-    .table-container {
-      width: 400px;
-      margin-right: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #0071DC;
-      color: #fff;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    .alert-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .alert-image {
-      width: 100px;
-      height: 100px;
-      margin-left: 20px;
-    }
-
-    .alert-message {
-      font-weight: bold;
-      color: #FF0000;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="table-container">
-      <h2>Help Topics</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Order Tracking</td>
-          </tr>
-          <tr>
-            <td>Returns and Exchanges</td>
-          </tr>
-          <tr>
-            <td>Delivery and Shipping</td>
-          </tr>
-          <tr>
-            <td>Payment and Billing</td>
-          </tr>
-          <tr>
-            <td>Product Information</td>
-          </tr>
-          <tr>
-            <td>Account Management</td>
-          </tr>
-          <tr>
-            <td>Refunds and Cancellations</td>
-          </tr>
-          <tr>
-            <td>Customer Support</td>
-          </tr>
-          <tr>
-            <td>Privacy and Security</td>
-          </tr>
-          <tr>
-            <td>FAQs</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="products">
+        <button>Product 1</button>
+        <button>Product 2</button>
+        <button>Product 3</button>
     </div>
-    <div class="alert-container">
-      <div class="alert-message">
-        <p>Alert, Major Shipping Delays!</p>
-      </div>
-      <img src="shipping-alert.png" alt="Shipping Alert" class="alert-image">
-    </div>
-  </div>
 </body>
 </html>
-
