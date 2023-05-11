@@ -3,7 +3,7 @@
 <head>
   <title>My E-commerce Website</title>
   <style>
-    /* CSS styles for the logo and header */
+    /* CSS styles for the logo, header, and buttons */
     body {
       margin: 0;
       padding: 0;
@@ -12,7 +12,7 @@
     }
 
     header {
-      background-color: #4CAF50; /* Olive green */
+      background-color: #0071DC; /* Blue color */
       padding: 10px;
       display: flex;
       align-items: center;
@@ -20,8 +20,34 @@
     }
 
     header img {
-      height: 50px;
+      height: 60px; /* Increase the logo size */
       margin-right: 10px;
+    }
+
+    .search-bar {
+      flex-grow: 1; /* Take remaining space */
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .search-bar button {
+      padding: 5px 10px;
+      background-color: #4CAF50; /* Olive green */
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    nav {
+      flex-grow: 1; /* Take remaining space */
     }
 
     nav ul {
@@ -29,10 +55,11 @@
       margin: 0;
       padding: 0;
       display: flex;
+      justify-content: flex-end; /* Align links to the right */
     }
 
     nav ul li {
-      margin-right: 10px;
+      margin-left: 10px; /* Increase the spacing between links */
     }
 
     nav ul li a {
@@ -43,14 +70,32 @@
     }
 
     nav ul li a:hover {
-      color: #92C267; /* Light olive green on hover */
+      color: #A6DCF2; /* Light blue color on hover */
     }
 
     main {
       padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      background-color: #0071DC; /* Blue color */
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-group button:hover {
+      background-color: #A6DCF2; /* Light blue color on hover */
     }
 
     footer {
@@ -63,6 +108,10 @@
 <body>
   <header>
     <img src="logo.png" alt="Logo">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button type="button">Search</button>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Shop</a></li>
@@ -74,13 +123,8 @@
 
   <main>
     <!-- Your website content goes here -->
-    <h1>Out of Stock Items</h1>
-    <p>If an item is currently out of stock on our website, you have the following options:</p>
-    <ul>
-      <li>Check back later: Out of stock items may become available again in the future. We regularly update our inventory, so please check back at a later time.</li>
-      <li>Explore similar items: If the item you want is out of stock, consider exploring similar items that may meet your needs and preferences.</li>
-      <li>Contact customer support: If you have any questions or need assistance regarding out of stock items, feel free to contact our customer support team.</li>
-    </ul>
+    <h1>Alert! Major Shipping Delays</h1>
+    <p>Unfortunately our QualTreks Kicks are in High Demand.</p>
   </main>
 
   <footer>
@@ -88,3 +132,4 @@
   </footer>
 </body>
 </html>
+
