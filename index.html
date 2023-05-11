@@ -49,18 +49,28 @@
             flex-grow: 2;
             margin-left: 20px;
         }
-        .products {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-            margin-top: 20px; /* Added margin-top */
-        }
-        .products button {
-            background: #4d5d53;
+        .product-alert {
+            border: 2px solid #000000;
+            border-radius: 10px;
             padding: 20px;
+            margin: 20px 0;
+        }
+
+        .product-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .product-buttons button {
+            background-color: #4d5d53;
+            margin: 0 10px;
+            padding: 10px;
             font-size: 20px;
+            border-radius: 10px;
             color: white;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -184,11 +194,16 @@
         </div>
         <div class="alert-and-products">
             <div class="alert">Alert! Major Shipping Delays</div>
-            <div class="products">
-                <button>QualTreks Kicks</button>
-                <button>Trek Slides</button>
-                <button>Trek Trainers</button>
+            /* product section */
+        </div>
+        <div class="product-alert">
+            <h3>Review the impacted products below, sorry for the inconvenience</h3>
+            <div class="product-buttons">
+                <button>Qualtreks Kicks</button>
+                <button>TrekSlides</button>
+                <button>TrekTrainers</button>
             </div>
+            <h3>Unfortunately we are having supply chain issues and are experiencing major shipping delays. For immediate concerns please reach out to our support team to further assistt you in getting your issues resolved.</h3>
         </div>
         <div class="feedback-section">
             <h3>Was this article helpful?</h3>
