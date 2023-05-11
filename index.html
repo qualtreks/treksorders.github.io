@@ -152,36 +152,116 @@
       border-bottom: 1px solid #ccc;
     }
   </style>
+<head>
+  <title>Support Help Topics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .table-container {
+      width: 400px;
+      margin-right: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0071DC;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .alert-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .alert-image {
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+    }
+
+    .alert-message {
+      font-weight: bold;
+      color: #FF0000;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
-      <div class="row">Shop by Category</div>
-      <div class="row">New Arrivals</div>
-      <div class="row">Best Sellers</div>
-      <div class="row">Deals of the Day</div>
-      <div class="row">Clearance</div>
-      <div class="row">Customer Favorites</div>
-      <div class="row">Gift Ideas</div>
-      <div class="row">Top Rated Products</div>
-      <div class="row">Recently Viewed</div>
-      <div class="row">Special Offers</div>
+    <div class="table-container">
+      <h2>Help Topics</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order Tracking</td>
+          </tr>
+          <tr>
+            <td>Returns and Exchanges</td>
+          </tr>
+          <tr>
+            <td>Delivery and Shipping</td>
+          </tr>
+          <tr>
+            <td>Payment and Billing</td>
+          </tr>
+          <tr>
+            <td>Product Information</td>
+          </tr>
+          <tr>
+            <td>Account Management</td>
+          </tr>
+          <tr>
+            <td>Refunds and Cancellations</td>
+          </tr>
+          <tr>
+            <td>Customer Support</td>
+          </tr>
+          <tr>
+            <td>Privacy and Security</td>
+          </tr>
+          <tr>
+            <td>FAQs</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="content">
-      <!-- Your website content goes here -->
+    <div class="alert-container">
+      <div class="alert-message">
+        <p>Alert, Major Shipping Delays!</p>
+      </div>
+      <img src="shipping-alert.png" alt="Shipping Alert" class="alert-image">
     </div>
   </div>
-</body>
-
-  <main>
-    <!-- Your website content goes here -->
-    <h1>Alert! Major Shipping Delays</h1>
-    <p>Unfortunately our QualTreks Kicks are in High Demand.</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My E-commerce Website. All rights reserved.</p>
-  </footer>
 </body>
 </html>
 
